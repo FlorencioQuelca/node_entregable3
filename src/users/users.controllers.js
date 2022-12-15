@@ -1,14 +1,13 @@
 
-const Users =require('../models/users.models')
+const Users = require('../models/users.models')
 const {hashPassword} =require('../utils/crypto')
+const uuid = require('uuid')
 const findAllUsers = async() => {
     const data = await Users.findAll({
         attributes: {
             exclude: ['password', 'createdAt', 'updatedAt']
         },
-        where: {
-            status: 'active'
-        }
+       
     })
     return data
 
@@ -29,13 +28,11 @@ const findUserById = async(id) => {
 
 const createUser = async(obj) => {
     const data = await Users.create({
-        id: uuid.v4(),
-        firstName: obj.firstName,
-        lastName: obj.lastName,
+        first_name: obj.first_name,
+        last_name: obj.last_name,
         email: obj.email,
         password: hashPassword(obj.password),
-        gender: obj.gender,
-        birthday: obj.birthday
+        birthday: obj.birthday,
     })
     return data
 }
@@ -51,8 +48,6 @@ const updateUser = async(id,obj) => {
 
 const deleteUser = async(id) => {
     const data = await Users.update({
-        status: 'inactive'
-    }, {
         where: {
             id: id
         }

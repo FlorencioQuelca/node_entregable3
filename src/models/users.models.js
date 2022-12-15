@@ -4,6 +4,7 @@ const Users =db.define('users',{
    id:{
       type:DataTypes.INTEGER,
       primaryKey:true,
+      autoIncrement:true
    },
    first_name:{
     type:DataTypes.STRING,
@@ -27,7 +28,7 @@ const Users =db.define('users',{
   birthday:{
     type:DataTypes.DATEONLY,
     allowNull:false,
-    defaultValue:'2000/01/01/'
+    defaultValue:'2000/01/01'
   }
 })
 module.exports=Users

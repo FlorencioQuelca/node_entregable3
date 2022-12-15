@@ -1,5 +1,6 @@
 # Crud de Usuarios (codigo espagetti)
 
+POR: FLORENCIO QUELCA MAMANI
 ### Objetivo: Simular una entrevista tecnica, el estudiante debera corregir el codigo y agregar ciertos features
 
 ---- 

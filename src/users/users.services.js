@@ -28,7 +28,7 @@ const getUserById = (req,res) => {
 
 const postUser = (req,res) => {
     const {first_name, last_name, email, password, birthday} = req.body
-    userControllers.createUser({first_name, last_name, email, password,gender, birthday})
+    userControllers.createUser({first_name, last_name, email, password, birthday})
         .then((data) => {
             res.status(201).json(data)
         })
