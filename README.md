@@ -57,3 +57,21 @@ POR: FLORENCIO QUELCA MAMANI
 
 3. Deberas hacer un add, un commit y un push a tu repositorio
 4. Vas a mandar el link de tu repositorio con tu codigo al Class-center
+
+
+<aside>
+**Bases a reforzar:**
+
+1. Express
+2. Sequelize
+3. Modelos
+</aside>
+
+<aside>
+ **Entregas:**
+
+- [ ]  Proyecto en GitHub
+- [ ]  El codigo debe ser leíble, recuerden que el codigo lo tiene que leer mas gente (miembros de su squad y el profesor)
+- [ ]  El código debe estar en ingles ( variables, nombres, metodos) pero los comentarios pueden estar en Español
+
+</aside>
